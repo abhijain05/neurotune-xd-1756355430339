@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+  xmlns:layout="sap.ui.layout"
+  xmlns:form="sap.ui.layout.form"
+  xmlns:core="sap.ui.core"
+  xmlns:richtexteditor="sap.ui.richtexteditor"
+  xmlns:viz="sap.viz.ui5"
+  controllerName="preview.app.controller.CustomerFeedbackView"
+  displayBlock="true">
+  <Page title="CustomerFeedbackView" enableScrolling="true">
+    <content>
+      <Page id="page_7javqr90" title="CustomerFeedback">
+        <form:SimpleForm id="simpleform_0z8iaen0" editable="true" layout="ResponsiveGridLayout">
+          <Label id="label_fyx7tzrl" text="Name"/>
+          <Input id="input_nwk2obc6" placeholder="Name" value="{/name}"/>
+          <Label id="label_oegw6bkp" text="Email"/>
+          <Input id="input_fswqa4oi" placeholder="Email" value="{/email}"/>
+          <Label id="label_mt2jhcpe" text="Rating (1-5 stars)"/>
+          <Input id="input_lqo23sk6" placeholder="Rating (1-5 stars)" value="{/rating(1-5stars)}"/>
+          <Label id="label_rolx62py" text="Service Quality"/>
+          <Input id="input_qrw84lxk" placeholder="Service Quality" value="{/servicequality}"/>
+          <Label id="label_suu0fp4x" text="Comments"/>
+          <Button id="button_se0auehs" text="Submit" type="Emphasized"/>
+        </form:SimpleForm>
+      </Page>
+    </content>
+  </Page>
+</mvc:View>
