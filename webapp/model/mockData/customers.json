@@ -1,0 +1,84 @@
+{
+  "customers": [
+    {
+      "id": "CUST-10001",
+      "name": "Alice Smith",
+      "email": "alice.smith@example.com",
+      "rating": 4,
+      "comments": "Great service overall!",
+      "feedbackSubmitted": false
+    },
+    {
+      "id": "CUST-10002",
+      "name": "Bob Johnson",
+      "email": "bob.johnson@example.com",
+      "rating": 5,
+      "comments": "Excellent product quality.",
+      "feedbackSubmitted": false
+    },
+    {
+      "id": "CUST-10003",
+      "name": "Charlie Brown",
+      "email": "charlie.brown@example.com",
+      "rating": 3,
+      "comments": "Average experience.",
+      "feedbackSubmitted": false
+    },
+    {
+      "id": "CUST-10004",
+      "name": "David Lee",
+      "email": "david.lee@example.com",
+      "rating": 2,
+      "comments": "Could be better.",
+      "feedbackSubmitted": false
+    },
+    {
+      "id": "CUST-10005",
+      "name": "Eve Wilson",
+      "email": "eve.wilson@example.com",
+      "rating": 5,
+      "comments": "Outstanding service!",
+      "feedbackSubmitted": false
+    },
+    {
+      "id": "CUST-10006",
+      "name": "Franklin Grant",
+      "email": "franklin.grant@example.com",
+      "rating": 4,
+      "comments": "Good value for money.",
+      "feedbackSubmitted": false
+    },
+    {
+      "id": "CUST-10007",
+      "name": "Grace Taylor",
+      "email": "grace.taylor@example.com",
+      "rating": 3,
+      "comments": "Met my expectations.",
+      "feedbackSubmitted": false
+    },
+    {
+      "id": "CUST-10008",
+      "name": "Henry Moore",
+      "email": "henry.moore@example.com",
+      "rating": 1,
+      "comments": "Very poor experience.",
+      "feedbackSubmitted": false
+    },
+    {
+      "id": "CUST-10009",
+      "name": "Ivy Clark",
+      "email": "ivy.clark@example.com",
+      "rating": 5,
+      "comments": "Exceptional quality!",
+      "feedbackSubmitted": false
+    },
+    {
+      "id": "CUST-10010",
+      "name": "Jack White",
+      "email": "jack.white@example.com",
+      "rating": 4,
+      "comments": "I would recommend this.",
+      "feedbackSubmitted": false
+    }
+  ]
+}

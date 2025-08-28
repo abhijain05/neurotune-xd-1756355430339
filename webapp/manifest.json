@@ -66,32 +66,25 @@
           "name": "main",
           "pattern": "",
           "target": [
-            "main"
-          ]
-        },
-        {
-          "name": "first",
-          "pattern": "first",
-          "target": [
-            "main"
+            "CustomerFeedbackView"
           ]
         },
         {
           "name": "second",
           "pattern": "second",
           "target": [
-            "second"
+            "SecondView"
           ]
         }
       ],
       "targets": {
-        "main": {
+        "CustomerFeedbackView": {
           "viewName": "CustomerFeedbackView",
           "viewLevel": 1,
           "controlId": "app",
           "controlAggregation": "pages"
         },
-        "second": {
+        "SecondView": {
           "viewName": "SecondView",
           "viewLevel": 1,
           "controlId": "app",

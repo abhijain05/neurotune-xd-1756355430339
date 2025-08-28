@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebDynpro xmlns="http://www.sap.com/wd/webdynpro">
+  <View name="CustomerFeedbackView">
+    <Title>Customer Feedback Form</Title>
+    <FormContainer id="formContainer">
+      <FormElement id="customerInfo">
+        <Label id="nameLabel" text="Name"/>
+        <InputField id="nameField" value="{/CustomerData/Name}"/>
+      </FormElement>
+      <FormElement id="emailInfo">
+        <Label id="emailLabel" text="Email"/>
+        <InputField id="emailField" value="{/CustomerData/Email}"/>
+      </FormElement>
+      <FormElement id="ratingInfo">
+        <Label id="ratingLabel" text="Rating (1-5 stars)"/>
+        <!--  WebDynpro doesn't have a direct star rating control.  This would need custom implementation or a workaround using other controls.  Placeholder below -->
+        <InputField id="ratingField" value="{/CustomerData/Rating}" tooltip="Enter a rating between 1 and 5"/>
+      </FormElement>
+      <FormElement id="serviceQuality">
+        <Label id="serviceQualityLabel" text="Service Quality"/>
+        <!--  Checkboxes would require a custom implementation or a workaround using multiple elements in WebDynpro. Placeholder below -->
+        <TextView id="serviceQualityTextView" text="Select applicable options (custom implementation needed)"/>
+      </FormElement>
+      <FormElement id="commentInfo">
+        <Label id="commentLabel" text="Comments"/>
+        <InputField id="commentField" value="{/CustomerData/Comments}" multiline="true"/>
+      </FormElement>
+      <Button id="submitButton" text="Submit" press="onSubmit"/>
+      <MessageArea id="messageArea"/>
+    </FormContainer>
+  </View>
+  <Controller name="CustomerFeedbackViewController">
+    <method name="onSubmit">
+      <!--  Implementation to handle the submission of feedback data.  This might involve data persistence. -->
+      <source>
+        <![CDATA[
+          // TODO: Implement data persistence logic here.
+          wdThis.wdGetAPI().getMessageManager().reportSuccess("Thank you for your feedback!");
+          wdContext.currentContextElement().setFeedbackSubmitted(true); // Assuming a boolean flag exists
+
+        ]]>
+      </source>
+    </method>
+  </Controller>
+</WebDynpro>
